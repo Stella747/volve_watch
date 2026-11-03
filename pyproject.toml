@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "volvewatch"
+version = "0.1.0"
+description = "Local production monitoring and trend analysis for Volve field CSV and Excel exports"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26,<3",
+    "openpyxl>=3.1,<4",
+    "pandas>=2.2,<4",
+    "streamlit>=1.38,<2",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["volvewatch*"]
